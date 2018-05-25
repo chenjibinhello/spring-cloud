@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8769
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    api-boot:
+      path: /api-boot/**
+      serviceId: service-boot
+    api-config:
+      path: /api-config/**
+      service-id: config-server
