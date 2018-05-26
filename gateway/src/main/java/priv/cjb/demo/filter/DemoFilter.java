@@ -27,7 +27,13 @@ public class DemoFilter extends ZuulFilter {
 	 */
 	@Override
 	public boolean shouldFilter() {
-		return true;
+		RequestContext ctx = RequestContext.getCurrentContext();
+		HttpServletRequest request = ctx.getRequest();
+		String url = request.getRequestURL().toString();
+		if (url.contains("/api-boot/")) {
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -35,7 +41,7 @@ public class DemoFilter extends ZuulFilter {
 	 */
 	@Override
 	public int filterOrder() {
-		return 0;
+		return 1;
 	}
 
 	/**

@@ -12,6 +12,3 @@ zuul:
     api-boot:
       path: /api-boot/**
       serviceId: service-boot
-    api-config:
-      path: /api-config/**
-      service-id: config-server
