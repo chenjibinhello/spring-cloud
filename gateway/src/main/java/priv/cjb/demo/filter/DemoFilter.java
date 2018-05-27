@@ -15,10 +15,10 @@ public class DemoFilter extends ZuulFilter {
 
 	@Override
 	public Object run() {
-		RequestContext ctx = RequestContext.getCurrentContext();
-		HttpServletRequest request = ctx.getRequest();
+		//RequestContext ctx = RequestContext.getCurrentContext();
+		//HttpServletRequest request = ctx.getRequest();
 
-		LOGGER.info("------------------filter running-------------------");
+		LOGGER.info("------------------demo filter running-------------------");
 		return null;
 	}
 
@@ -41,7 +41,7 @@ public class DemoFilter extends ZuulFilter {
 	 */
 	@Override
 	public int filterOrder() {
-		return 1;
+		return 0;
 	}
 
 	/**
