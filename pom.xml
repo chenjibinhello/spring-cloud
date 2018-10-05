@@ -10,7 +10,7 @@
 		<module>gateway</module>
 		<module>config</module>
 		<module>boot</module>
-		<module>eureka-server</module>
+		<module>eureka</module>
 	</modules>
 
 
