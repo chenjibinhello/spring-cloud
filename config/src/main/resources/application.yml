@@ -11,11 +11,11 @@ spring:
         # 配置git仓库的地址
           uri: https://github.com/chenjibinhello/config.git
         # 配置仓库的路径
-          searchPaths: respo
+          searchPaths: respo/**
           # 访问git仓库的用户名
           # username:
           # 访问git仓库的用户密码
           # password:
           # 如果git仓库是公开仓库，那么此处的用户名和密码可以不用写
     # 配置仓库的分支
-    label: master
+    label: ${LABEL:dev}
