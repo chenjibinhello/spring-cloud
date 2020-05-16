@@ -24,7 +24,7 @@ public class BootApplication {
 	}
 
 	@Bean
-	@LoadBalanced
+	//@LoadBalanced
 	RestTemplate restTemplate() {
 		return new RestTemplate();
 	}

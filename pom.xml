@@ -11,7 +11,8 @@
 		<module>config</module>
 		<module>boot</module>
 		<module>eureka</module>
-	</modules>
+        <module>webflux</module>
+    </modules>
 
 
 </project>
